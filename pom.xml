@@ -26,8 +26,11 @@
 			<!-- 表示开发的时候引入，发布的时候不会加载此包 -->
 			<scope>test</scope>
 		</dependency>
-		<!-- <dependency> <groupId>javax.servlet</groupId> <artifactId>javax.servlet-api</artifactId> 
-			<version>3.1.0</version> </dependency> -->
+		<dependency>
+			<groupId>javax.servlet</groupId>
+			<artifactId>javax.servlet-api</artifactId>
+			<version>3.1.0</version>
+		</dependency>
 
 		<!-- spring核心包 -->
 		<dependency>
@@ -93,6 +96,12 @@
 			<version>1.2.2</version>
 		</dependency>
 
+		<!-- mybatis-generator-core 反向生成java代码 -->
+		<dependency>
+			<groupId>org.mybatis.generator</groupId>
+			<artifactId>mybatis-generator-core</artifactId>
+			<version>1.3.5</version>
+		</dependency>
 		<!-- 导入java ee jar 包 -->
 		<dependency>
 			<groupId>javax</groupId>
