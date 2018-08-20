@@ -4,8 +4,6 @@ import java.util.Map;
 
 import javax.annotation.Resource;
 
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Controller;
@@ -18,9 +16,11 @@ import com.redisv5.service.IUserService;
 
 @Controller
 @RequestMapping("/user")
-// /user/**
+// /user/*/*
 public class UserController {
-	private static Logger log = LoggerFactory.getLogger(UserController.class);
+
+	// private static Logger log = LoggerFactory.getLogger(UserController.class);
+
 	@Resource
 	private IUserService userService;
 
